@@ -2,9 +2,10 @@ import { Row,Col , Container } from "react-bootstrap";
 
 const Footer = () => (
 
-    <Container fluid clasName="dark" style={{height:'100px'}}>
-    <Row className="d-flex  mx-auto justify-content-between align-items-center">
-      <Col className="">Contact</Col>
+    <Container fluid style={{height:'80px', backgroundColor:'#040606'}}className="d-flex  
+    mx-auto justify-content-center align-items-center px-auto mt-3">
+    <Row className="text-white">
+      <Col className="ml-auto text-white">Contact</Col>
       <Col>About</Col>
       <Col>News</Col>
     </Row>
