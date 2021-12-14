@@ -10,17 +10,17 @@ class LatestRelease extends Component {
             
               return(
 
-                <Container className="mt-5">
+                <Container className="mt-5"  >
                 <Row>
-                  <Col>
+                  
                      
                      {
                          books.map(book => (
-
-                            <Card key={book.asin} style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={book.img} />
+                          <Col className="col-sm-12 col-md-4 mt-2">
+                            <Card  border="dark" key={book.asin} style={{ width: '18rem' }}  className="">
+                            <Card.Img variant="top" src={book.img}  style={{ width:'100%', maxHeight:'300px', }}/>
                             <Card.Body>
-                              <Card.Title>{book.title}</Card.Title>
+                              <Card.Title style={{ textOverflow:'""', fontSize:'16px'}}>{book.title} </Card.Title>
                               <Card.Text>
                                 {book.price}
                               </Card.Text>
@@ -34,14 +34,14 @@ class LatestRelease extends Component {
                               <Card.Link href="#">Another Link</Card.Link>
                             </Card.Body>
                           </Card>
-
+                          </Col>
 
                          ))
     
                     }
 
 
-                  </Col>
+                  
                 </Row>
               </Container>
               
