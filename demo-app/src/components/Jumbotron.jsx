@@ -1,14 +1,15 @@
 import { Row, Container, Col, btn } from "react-bootstrap"
+import './Jumbotron.css'
 
 const Jumbotron = () => (
 
-<Container className="mt-5">
-  <Row>
+<Container fluid className="">
+  <Row className="Jumbotron text-white">
     <Col>
-    <h1 className="display-4">Welcome To Strive Books</h1>
-    <p class="lead">This is Library to showcase some cool Fantasy books.</p>
+    <h1 className="display-2 mt-3">Welcome To Strive Books</h1>
+    <p class="lead mt-3">This is Library to showcase some cool Fantasy books.</p>
    <p>Pick a book by clicking the button.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <a class="btn btn-primary btn-lg mt-3" href="#" role="button">Learn more</a>
     </Col>
   </Row>
 </Container>
