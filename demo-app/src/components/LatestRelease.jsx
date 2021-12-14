@@ -17,10 +17,10 @@ class LatestRelease extends Component {
                      {
                          books.map(book => (
                           <Col className="col-sm-12 col-md-4 mt-2">
-                            <Card  border="dark" key={book.asin} style={{ width: '18rem' }}  className="">
-                            <Card.Img variant="top" src={book.img}  style={{ width:'100%', maxHeight:'300px', }}/>
+                            <Card  border="dark" key={book.asin} style={{ width: '18rem',height:"100%" }}  className="">
+                            <Card.Img className="img-fluid" variant="top" src={book.img} style={{height:400,objectFit:"cover"}}  />
                             <Card.Body>
-                              <Card.Title style={{ textOverflow:'""', fontSize:'16px'}}>{book.title} </Card.Title>
+                              <Card.Title style={{ textOverflow:'ellipsis', fontSize:'16px'}}>{book.title} </Card.Title>
                               <Card.Text>
                                 {book.price}
                               </Card.Text>
